@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+    height: auto;
+  }
+  .Header, .About, main, article, aside {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  main, aside {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .everest-artikel, .Geology, .flora-fauna, .Geography-aside, .everest-aside {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+  }
+
+  h1, h2, h3, a, p {
+    font-size: 9px;
+  }
+
+  #bawah, .Header {
+    height: auto;
+  }
+}

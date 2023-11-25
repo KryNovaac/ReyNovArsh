@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Avenir Next";
+  }
+
+.Header {height:65px; width:100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(76, 41, 216) 0%, rgb(155, 225, 229) 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+   
+  
+.About {
+    margin-top: -55px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    transition: all 0.5s;
+    font-size:17px;
+}
+  
+  
+.About:hover { opacity: 0.5; 
+    font-size: 20px;
+    color: skyblue ;
+    font:bold (2.0);
+    background: linear-gradient(90deg, red, rgb(255, 54, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+a {
+    text-decoration: none;
+    transition: background-color 2s ease;
+  }  
+  
+.logo {padding-left: 40px; margin-top: -25px; }
+
+main {
+    padding-top: 60px;
+    padding-left: 15px;
+    display: flex;
+    font-family: "Avenir Next";
+}
+
+main h1 {
+    color: #071952;
+    font-family: monospace;
+}
+
+article {
+    color: #071952; 
+    padding: 40px 30px 30px 30px;
+    width: 1070px;
+    height: 1900px;
+    margin-bottom: 80px;
+    box-shadow: 0 0 3px black;
+    border-radius:10px;
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+}
+
+.everest-aside {
+  height: 187px;
+  border-style: inherit;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 15px;
+}
+
+aside {
+    margin-left: 15px;
+    width: 345px;
+    height: 850px;
+    text-align: center;
+    box-shadow: 0 0 3px black;
+    border-radius:10px;
+}
+
+aside h1 {
+    padding-top: 15px;
+}
+
+.sejarah h1 {
+    padding-top: 10px;
+}
+
+.sejarah p {
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+#bawah {
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    background: linear-gradient(90deg, rgb(76, 41, 216) 0%, rgb(155, 225, 229) 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    transition: all 0.5s ease;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .everest-artikel {
+    margin: 50px 250px;
+    border-style: inherit;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Geology {
+    height: fit-content;
+    margin: 10px;
+    height: 200px;
+    margin: 20px 0 20px 20px;
+    border-style: inherit;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .flora-fauna {
+    width: auto;
+    margin: 20px 0 20px 20px;
+    border-style: inherit;
+    border-radius: 5px;
+    height: 250px;
+    max-width: 100%;
+  }
+  .Geography-aside {
+    border-style: inherit;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  
+  .searchBox {
+    position: relative;
+    padding-top: 50px;
+    width: 65px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .searchBox:hover {
+    width: 400px;
+  }
+  .searchBox input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px 25px ;
+    outline: none;
+    font-size: 1.1em;
+    color: #555;
+    background: linear-gradient(#dbdae1,#a3aaba);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1),
+    2px 2px 2px rgba(0, 0, 0, 0.1),
+    3px 3px 3px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1),
+    inset 1px 1px 2px #fff;
+    border-style: inherit;
+    border-radius: 9.5px;
+  }
+  .searchBox input::placeholder{
+    color: transparent;
+  }
+  ion-icon{
+    position: absolute;
+    right: 20px;
+    color: #555;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .wrapper a{
+    color: #fff;
+}
+
+.instagram,
+.facebook,
+.youtube{
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    line-height: 84px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: #333;
+    transition: 300ms;
+}
+
+.instagram{
+    background-color: #962fbf;
+}
+
+.facebook {
+    background-color: #3b5998;
+
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.instagram:after{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.facebook:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+
+.youtube:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.instagram:hover:after{
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px #962fbf,
+    0px 0px 50px #962fbf,
+    0px 0px 100px #962fbf;
+}
+
+.facebook:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px #3b5998,
+    0px 0px 50px #3b5998,
+    0px 0px 100px #3b5998;
+}
+
+.youtube:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px #ff0000,
+    0px 0px 50px #ff0000,
+    0px 0px 100px #ff0000;
+}
+
+.bawah-aside{
+  padding-top: 50px;
+}
+.hak-cipta {
+  color: aliceblue;
+  font-size: bold;
+  padding-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
